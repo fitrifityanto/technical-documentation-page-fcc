@@ -10,4 +10,6 @@ Next, kalau udah tahu cara yang lebih baik lagi, misal bisa mengimplementasikan 
 
 Sementara ini dulu kata pengantar dari project Technical Documentation Page ini. untuk melihat hasilnya, klik [disini](https://fitrifityanto.github.io/technical-documentation-page-fcc/documentation.html)
 
+Materi yang saya gunakan untuk Documentation Page ini saya ambil dari [https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction)
+
 semangatcoding ^_^
