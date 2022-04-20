@@ -21,10 +21,9 @@ body {
     font-family: var(--font-family);
     color: var(--font-color);
     font-weight: 500;
-    font-size: 1.125em;
     line-height: calc(2px + 2.5ex + 2px);
     padding: 1rem;
-
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem); 
 }
 
 h1,
@@ -53,8 +52,6 @@ code {
     margin-bottom: 1rem;
 }
 
-
-
 .nav-link-section > a {
     display: block;
     text-decoration: none;
@@ -64,7 +61,7 @@ code {
 }
 
 .main-section p:last-child {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 *[id]:before { 
@@ -79,6 +76,7 @@ code {
     body {
         display: grid;
         grid-auto-flow: row;
+        
     }
 
     #navbar {
@@ -97,6 +95,7 @@ code {
         grid-template-columns: minmax(250px,1fr) 3fr;
         gap: 1rem;
         align-items: baseline;
+        
     }
 
     #navbar {
