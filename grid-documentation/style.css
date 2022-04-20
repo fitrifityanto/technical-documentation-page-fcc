@@ -1,0 +1,103 @@
+:root {
+    --color-bg-primary:rgb(208,210,246);
+    --color-line:rgb(73,73,101);
+
+    --font-color:	rgb(45,49,82);
+    --font-family:'Inter', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--font-color);
+    font-weight: 500;
+    font-size: 1.125em;
+    line-height: calc(2px + 2.5ex + 2px);
+    padding: 1rem;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+}
+
+h2,
+h3 {
+    margin: 1rem 0;
+}
+
+ul {
+    margin: .6rem 0 .6rem 1.5rem;
+    list-style-position: inside;
+}
+
+code {
+    background-color: rgb(254,234,227);
+    color: var(--color-line);
+    padding: .3rem;
+}
+
+#navbar h1 {
+    margin-bottom: 1rem;
+}
+
+#navbar > a {
+    display: block;
+    text-decoration: none;
+    color: var(--font-color);
+    margin: .6rem .6rem 0 0;
+    border-bottom: 1px solid var(--color-line); 
+}
+
+.main-section p:last-child {
+    margin-bottom: 3rem;
+}
+
+*[id]:before { 
+    display: block; 
+    content: " "; 
+    margin-top: -.6rem; 
+    height: .6rem; 
+    visibility: hidden; 
+  }
+
+@media (max-width:809px) {
+    body {
+        display: grid;
+        grid-auto-flow: row;
+    }
+
+    #navbar {
+        border: none;
+        /* Jika nav-link ada banyak */
+        height: 250px;
+        overflow: auto;
+    }
+}
+
+@media screen and (min-width:809px)  {
+    body {
+        display: grid;
+        grid-template-columns: minmax(250px,1fr) 3fr;
+        gap: 1rem;
+        align-items: baseline;
+    }
+
+    #navbar {
+        position: sticky;
+        top: 2rem;
+        height: calc(90vh + .9rem);
+        border-right: 1px solid var(--color-bg-primary);
+    }
+}
