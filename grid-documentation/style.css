@@ -24,6 +24,7 @@ body {
     font-size: 1.125em;
     line-height: calc(2px + 2.5ex + 2px);
     padding: 1rem;
+
 }
 
 h1,
@@ -52,7 +53,9 @@ code {
     margin-bottom: 1rem;
 }
 
-#navbar > a {
+
+
+.nav-link-section > a {
     display: block;
     text-decoration: none;
     color: var(--font-color);
@@ -80,10 +83,12 @@ code {
 
     #navbar {
         border: none;
-        /* Jika nav-link ada banyak */
-        height: 250px;
-        overflow: auto;
     }
+    .nav-link-section {
+        /* Jika nav-link ada banyak */
+            max-height: 300px;
+            overflow: auto;
+        }
 }
 
 @media screen and (min-width:809px)  {
@@ -100,4 +105,10 @@ code {
         height: calc(90vh + .9rem);
         border-right: 1px solid var(--color-bg-primary);
     }
+
+    .nav-link-section {
+        /* Jika nav-link ada banyak */
+            max-height: calc(100vh - 8rem);
+            overflow: auto;
+        }
 }

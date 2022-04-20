@@ -10,10 +10,10 @@ Next, kalau udah tahu cara yang lebih baik lagi, misal bisa mengimplementasikan 
 
 Sementara ini dulu kata pengantar dari project Technical Documentation Page ini. untuk melihat hasilnya, klik [disini](https://fitrifityanto.github.io/technical-documentation-page-fcc/documentation.html)
 
-### update 20 April 2022
+### update
 Setelah browsing, alhamdulillah nemuin nih caranya, menggunakan layout grid (yang salah satu kolomnya ngga ikut scroll). ini solusi saya dapatkan dari [Melanie Richards](https://melanie-richards.com/blog/css-grid-sticky/).
 
-Salah satu kolomnya di atur `position:sticky'. dan berhasil, yeeay. 
+Salah satu kolomnya di atur `position:sticky`. dan berhasil, yeeay. 
 
 Untuk melihat hasil Documentation page menggunakan Grid layout, klik [disini](https://fitrifityanto.github.io/technical-documentation-page-fcc/grid-documentation/documentation.html)
 
